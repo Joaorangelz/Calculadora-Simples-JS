@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de notas</title>
+</head>
+<body>
+    <script>
+        //Inserir Notas//
+        let nota1 = Number(prompt("Insira a 1° nota."))
+        let nota2 = Number(prompt("Insira a 2° nota."))
+        let nota3 = Number(prompt("Insira a 3° nota."))
+
+        //Operações//
+        let soma = nota1 + nota2 + nota3
+        let resultado = soma / 3
+
+        //Conições//
+        if(resultado >= 7){
+            resultado = "Aprovado"
+        } else{
+            resultado = "Reprovado"
+        }
+
+        //Mostrar Resultado//
+        alert(`O aluno(a) está ${resultado}.`)
+    </script>
+</body>
+</html>
