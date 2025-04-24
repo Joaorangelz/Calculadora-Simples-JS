@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de média</title>
+</head>
+<body>
+    <script>
+        //Inserir as notas//
+        let nota1 = Number.parseInt(prompt("Digite a 1° nota"))
+        let nota2 = Number.parseInt(prompt("Digite a 2° nota"))
+        let nota3 = Number.parseInt(prompt("Digite a 3° nota"))
+
+        //Operações//
+        let soma = nota1 + nota2 + nota3
+        let resultado = soma / 3
+
+        //Condições//
+        if(resultado >= 7){
+            resultado = "Aprovado"
+        } else{
+            resultado = "Reprovado"
+        }
+
+        //Mostrar resultado//
+        alert(`O aluno foi ${resultado}.`)
+    </script>
+    
+</body>
+</html>
