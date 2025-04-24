@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação de idades</title>
+</head>
+<body>
+    <script>
+        //Inserir nomes e idades//
+        let nome1 = String(prompt("Insira o 1° nome."))
+        let idade1 = Number.parseInt(prompt("Insira a idade do 1° nome."))
+        let nome2 = String(prompt("Insira o 2° nome."))
+        let idade2 = Number.parseInt(prompt("Insira a idade do 2° nome."))
+        let comparacao = ""
+
+        //Condição//
+        if(idade1 > idade2){
+           comparacao = `${nome1} é mais velho que ${nome2}.`
+        } else if (idade1 == idade2){
+            comparacao = `${nome1} e ${nome2} possuem a mesma idade.`
+        } else{
+            comparacao = `${nome2} é mais velho que ${nome1}.`
+        }
+
+        //Mostrar resultado//
+        alert(comparacao)
+    </script>
+</body>
+</html>
