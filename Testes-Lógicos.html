@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Lógica</title>
+</head>
+<body>
+    <script>
+        //Entrada//
+       let idade = Number(prompt("Qual a sua idade?"));
+       let resposta = prompt("Você tem o nome na lista? (sim ou não)");
+
+       //Conversão para booleano//
+       let nomenalista = resposta.toLowerCase() === "sim";
+
+       //Condição//
+        if (idade >= 18 && nomenalista === true )
+            {alert("Seja Bem vindo a festa, pode entrar.")}
+        else if (idade < 18) 
+            {alert("Você não tem idade para entrar aqui")}
+        else if (nomenalista !== true)
+            {alert("Seu nome não está na lista.")} 
+        else {alert("Você não pode entrar.")};
+
+
+    </script>
+</body>
+</html>
